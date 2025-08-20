@@ -2,6 +2,8 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 
+import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope } from "react-icons/fa";
+
 const Hero = () => {
   return (
     <section
@@ -18,7 +20,7 @@ const Hero = () => {
         className="flex-shrink-0"
       >
         <Image
-          src="/me.jpeg" // replace with your image
+          src="/portfolio/8.jpg" // replace with your image
           alt="Noa"
           width={300}
           height={300}
@@ -50,6 +52,45 @@ const Hero = () => {
         >
           Fullstack Developer | React • Next.js • ElectronJs • Python
         </motion.p>
+
+        {/* Socials + Contact */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 1, duration: 0.8 }}
+          className="mt-8 flex space-x-6 text-2xl text-gray-700 dark:text-gray-300"
+        >
+          <a
+            href="mailto:noaligpitan@gmail.com"
+            className="hover:text-indigo-500"
+          >
+            <FaEnvelope />
+          </a>
+          <a
+            href="https://github.com/Noah202226"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-indigo-500"
+          >
+            <FaGithub />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/noaligpitan26/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-indigo-500"
+          >
+            <FaLinkedin />
+          </a>
+          <a
+            href="https://x.com/Xavier26_2022"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-indigo-500"
+          >
+            <FaTwitter />
+          </a>
+        </motion.div>
 
         {/* Button */}
         <motion.a

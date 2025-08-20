@@ -6,21 +6,21 @@ const projects = [
     title: "Portfolio Website",
     description:
       "A modern portfolio built with Next.js, TailwindCSS, and Framer Motion.",
-    image: "/portfolio/portfolio.png",
-    link: "https://yourportfolio.com",
+    image: "/portfolio/lira-port.png",
+    link: "https://www.liraaann.site/",
   },
   {
     title: "Rakape - Coffee shop website",
     description: "Full-stack store with Next.js, Stripe, and Appwrite backend.",
     image: "/portfolio/rakape-web.png",
-    link: "https://ecommerce-demo.com",
+    link: "https://ra-kape.vercel.app/",
   },
   {
-    title: "Blog Platform",
+    title: "RSCB Loan Website",
     description:
-      "A fast, MDX-powered blog platform with dark/light mode support.",
-    image: "/projects/blog.png",
-    link: "https://yourblog.com",
+      "A modern loan management website built with Next.js, Material UI, and Firebase for authentication and data handling.",
+    image: "/portfolio/rsbc-marketing.png",
+    link: "https://rsbc-marketing.vercel.app/",
   },
 ];
 
@@ -48,12 +48,15 @@ export default function Projects() {
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: index * 0.2 }}
-            className="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden"
+            whileHover={{ scale: 1.05, y: -5 }} // 👈 scale & lift up effect
+            className="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-2xl transition-all duration-300 overflow-hidden cursor-pointer"
           >
-            <img
+            <motion.img
               src={project.image}
               alt={project.title}
               className="w-full h-48 object-contain"
+              whileHover={{ scale: 1.1 }} // 👈 image zoom-in effect
+              transition={{ duration: 0.4 }}
             />
             <div className="p-6">
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
