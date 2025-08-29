@@ -19,7 +19,7 @@ const projects = [
     title: "RSCB Loan Website",
     description:
       "A modern loan management website built with Next.js, Material UI, and Firebase for authentication and data handling.",
-    image: "/portfolio/rsbc-marketing.png",
+    image: "/portfolio/rsbc-marketing.PNG",
     link: "https://rsbc-marketing.vercel.app/",
   },
 ];

@@ -24,7 +24,7 @@ export default function Contact() {
           className="text-3xl md:text-4xl font-bold text-center mb-6 
           text-gray-800 dark:text-white"
         >
-          Get In Touch
+          Let’s work together
         </motion.h2>
 
         {/* Form */}

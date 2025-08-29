@@ -33,17 +33,17 @@ const Navbar = () => {
           transition={{ duration: 0.6, delay: 0.3 }}
           className="flex items-center space-x-6 text-black dark:text-gray-200"
         >
-          <Link href="/about" className="hover:text-blue-500 transition-colors">
+          <Link href="#about" className="hover:text-blue-500 transition-colors">
             About
           </Link>
           <Link
-            href="/projects"
+            href="#projects"
             className="hover:text-blue-500 transition-colors"
           >
             Projects
           </Link>
           <Link
-            href="/contact"
+            href="#contact"
             className="hover:text-blue-500 transition-colors"
           >
             Contact

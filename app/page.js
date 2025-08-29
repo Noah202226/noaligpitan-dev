@@ -7,6 +7,8 @@ import ProjectCard from "./components/Projects";
 import { usePathname } from "next/navigation";
 import { AnimatePresence, motion } from "framer-motion";
 import Contact from "./components/Contact";
+import Services from "./components/Services";
+import AboutMe from "./components/About";
 
 export default function Home() {
   const pathname = usePathname();
@@ -23,6 +25,9 @@ export default function Home() {
         >
           <Navbar />
           <Hero />
+
+          <AboutMe />
+          <Services />
 
           <ProjectCard />
 
