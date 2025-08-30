@@ -19,7 +19,7 @@ const Navbar = () => {
           transition={{ duration: 0.6, delay: 0.2 }}
         >
           <Link
-            href="/"
+            href="#hero"
             className="text-2xl font-bold text-black dark:text-white"
           >
             NOA

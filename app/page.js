@@ -9,6 +9,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import Contact from "./components/Contact";
 import Services from "./components/Services";
 import AboutMe from "./components/About";
+import WorkExperienceAndCertificates from "./components/WorkExperienceAndCertificates";
 
 export default function Home() {
   const pathname = usePathname();
@@ -25,11 +26,11 @@ export default function Home() {
         >
           <Navbar />
           <Hero />
+          <ProjectCard />
 
           <AboutMe />
+          <WorkExperienceAndCertificates />
           <Services />
-
-          <ProjectCard />
 
           <Contact />
         </motion.div>
