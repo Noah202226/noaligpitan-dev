@@ -37,8 +37,6 @@ export default function AboutMe() {
             About Me
           </h2>
           <p className="mt-4 text-base md:text-lg leading-relaxed">
-            Hi, I’m{" "}
-            <span className="font-semibold text-indigo-500">Noa Ligpitan</span>{" "}
             — a passionate{" "}
             <span className="font-medium">Fullstack Developer</span> and
             <span className="font-medium"> Virtual Assistant</span> with a
