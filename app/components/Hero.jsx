@@ -74,6 +74,7 @@ export default function Hero() {
               whileHover={{ scale: 1.3, rotate: 10 }}
               whileTap={{ scale: 0.9 }}
               className="hover:text-indigo-500 transition"
+              target="_blank"
             >
               {item.icon}
             </motion.a>

@@ -18,7 +18,7 @@ export default function AboutMe() {
           className="flex justify-center"
         >
           <Image
-            src="/portfolio/4.jpg"
+            src="/NOA2.png"
             alt="About Me"
             width={300}
             height={300}

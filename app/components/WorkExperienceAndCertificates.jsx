@@ -3,31 +3,31 @@ import { motion } from "framer-motion";
 export default function ExperienceCertifications() {
   const workExperience = [
     {
-      role: "Full Stack Developer",
-      company: "Tech Solutions Inc.",
-      duration: "Jan 2022 - Present",
-      description: "Developed web applications using Next.js and Firebase.",
+      role: "Administrative Aide V - IT Officer",
+      company: "Department of Public Works and Highways - Region 4A",
+      duration: "May 2025 - Present",
+      description: "Document management, data entry, and IT support.",
     },
     {
-      role: "Frontend Developer",
-      company: "Creative Web Studio",
-      duration: "Jan 2020 - Dec 2021",
-      description: "Built responsive UI using React and TailwindCSS.",
+      role: "Technical Support",
+      company: "Caffeinas Brew & Sige go Convenience Store",
+      duration: "April 2022 - Present",
+      description: "Graphic Design, data entry, Marketing, and Cashiering.",
     },
   ];
 
   const certifications = [
     {
-      title: "Certified JavaScript Developer",
+      title: "Certified JavaScript Essentials 1",
       provider: "Udemy",
-      image: "/certificates/js-cert.png",
-      link: "#", // Optional: link to PDF or image
+      image: "/certs/javascript-essentials-1.png",
+      link: "https://www.credly.com/badges/50788011-f9bd-481d-8432-0e5873828678/public_url", // Optional: link to PDF or image
     },
     {
-      title: "React Advanced Course",
+      title: "Certified Python Essentials 1",
       provider: "Coursera",
-      image: "/certificates/react-cert.png",
-      link: "#",
+      image: "/certs/python-essentials-1.1.png",
+      link: "https://www.credly.com/badges/d523e759-670e-45aa-a6b7-75209afe5241/public_url",
     },
   ];
 
@@ -77,9 +77,9 @@ export default function ExperienceCertifications() {
                   <img
                     src={cert.image}
                     alt={cert.title}
-                    className="w-full h-32 object-cover"
+                    className="w-full h-48 p-2 object-center bg-gray-100 dark:bg-gray-700"
                   />
-                  <div className="p-4">
+                  <div className="p-2">
                     <h4 className="font-semibold">{cert.title}</h4>
                     <p className="text-sm text-gray-500">{cert.provider}</p>
                   </div>
